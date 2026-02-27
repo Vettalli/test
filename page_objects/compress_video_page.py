@@ -12,11 +12,9 @@ class CompressVideoPage(BasePage):
     UPLOADER_PROGRESSBAR = (By.XPATH, "//*[@class = 'uploader-progressbar']")
     CIRCLE_LOADING = (By.XPATH, "//*[contains(@style, 'infinite normal')]")
     DOWNLOAD_BUTTON = (By.XPATH, "//*[@class = 'optimizer-download-btn']")
-    RESTART_SESSION_BUTTON = (By.XPATH, "//*[@class = 'restart-btn']")
     ACCEPT = (By.XPATH, "//button[@data-tid='banner-accept']")
 
     def upload_video(self, file_path):
-
         self.wait_clickable(self.ACCEPT).click()
         file_input = self.wait.until(
             EC.presence_of_element_located(self.DROP_ZONE)

@@ -16,6 +16,3 @@ class BasePage:
 
     def click(self, locator):
         self.wait_clickable(locator).click()
-
-    def get_text(self, locator):
-        return self.wait_visible(locator).text
