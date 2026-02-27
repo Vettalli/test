@@ -1,4 +1,4 @@
-# Beamr / JPEGmini Selenium tests
+# JPEGmini Selenium tests
 
 ## Requirements
 
